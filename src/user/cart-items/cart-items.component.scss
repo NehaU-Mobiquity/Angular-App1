@@ -82,6 +82,9 @@
   .image{
     margin-right: 50px;
   }
+  .image>img{
+    object-fit: contain;
+  }
   .description{
     padding-top: 10px;
     margin-right: 60px;

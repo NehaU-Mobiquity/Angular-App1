@@ -1,157 +1,284 @@
-* {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    box-sizing: border-box;
-  }
-  #footer {
-    bottom: 0;
-    color: #707070;
-    height: 2em;
-    left: 0;
-    position: relative; //changed to relative from fixed also works if position is not there
-    font-size: small;
-    width:100%;
-}
-  .listing-section{
-    width: 100%;
-    float: left;
-    padding: 1%;
-    border-bottom: 0.01em solid #dddbdb;
-  }
-  
-  .product {
-    float: left;
-    width: 23%;
-    border-radius: 2%;
-    margin: 1%;
-  }
-  
-  .product:hover {
-    box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
-    -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
-  }
-  
-  .image-box {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 2% 2% 0 0;
-  }
-  
-  .images {
-    height: 15em;
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat;
-    border-radius: 2% 2% 0 0;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-  }
-  
-  .images:hover {
-    transform: scale(1.2);
-    overflow: hidden;
-    border-radius: 2%;
-  }
-  
-  /* IMAGES */
-  #image-1 {background-image: url("https://sc01.alicdn.com/kf/UT8.CaXX2NXXXagOFbXC/fresh-navel-oranges.jpg");}
-  
-  #image-2 {background-image: url("https://newenglandapples.files.wordpress.com/2014/10/img_5595.jpg")}
-  
-  #image-3 {background-image: url("https://sc01.alicdn.com/kf/UT8ovSIXQNaXXagOFbXt/Fresh-Passion-Fruit-with-Best-Price-and.jpg")}
-  
-  #image-4 {background-image: url("http://www.foodmatters.com/media/images/articles/16-powerful-reasons-to-eat-pineapple.jpg")}
-  
-  #image-5 {background-image: url("http://membrillo.com.au/wp-content/uploads/2016/11/bg-mango-01.jpg")}
-  
-  #image-6 {background-image: url("http://ell.h-cdn.co/assets/16/27/980x490/landscape-1467750721-gettyimages-146896572.jpg")}
-  
-  #image-7 {background-image: url("http://www.hesca.org/wp-content/uploads/2016/08/banana.jpg")}
-  
-  #image-8 {background-image: url("http://www.baag.com.au/pictures/produce/plums2.jpg")}
-  
-  #image-9 {background-image: url("https://ecowatchroar-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F9458277%2F1200x600.jpg/2000%2C2000/J9vl96eLQCOEy3Xy/img.jpg")}
-  
-  #image-10 {background-image: url("https://www.parhlo.com/wp-content/uploads/2016/04/Valencia_market_-_lemons-1940x1454.jpg")}
-  
-  .text-box {
-    width: 100%;
-    float: left;
-    border: 0.01em solid #dddbdb;
-    border-radius: 0 0 2% 2%;
-    padding: 1em;
-  }
-  
-  h2, h3 {
-    float: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1em;
-    text-transform: uppercase;
-    margin: 0.2em auto;
-  }
-  
-  .item, .price {
-    clear: left;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .price {
-    color: Grey;
-  }
-  
-  .description, label, button, input {
-    float: left;
-    clear: left;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1em;
-    text-align: center;
-    margin: 0.2em auto;
-  }
-  
-  input:focus {
-    outline-color: #fdf;
-  }
-  
-  label {
-    width: 60%;
-  }
-  
-  .text-box input {
-    width: 15%;
-    clear: none;
-  }
-  
-  .text-box button {
-    margin-top: 1em;
-  }
-  
-  button {
-    padding: 2%;
-    background-color: #dfd;
-    border: none;
-    border-radius: 2%;
-  }
-  
-  button:hover {
-    bottom: 0.1em;
-  }
-  
-  button:focus {
-    outline: 0;
-  }
-  
-  button:active {
-    bottom: 0;
-    background-color: #fdf;
-  }
 
   
+
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+// *
+// {
+//     -webkit-box-sizing: border-box;
+//             box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+
+
+// body
+// {
+//     font-family: 'Roboto', sans-serif;
+// }
+// a
+// {
+//     text-decoration: none;
+// }
+// .product-card {
+//     width: 380px;
+//     position: relative;
+//     box-shadow: 0 2px 7px #dfdfdf;
+//     margin: 50px auto;
+//     background: #fafafa;
+// }
+
+// .badge {
+//     position: absolute;
+//     left: 0;
+//     top: 20px;
+//     text-transform: uppercase;
+//     font-size: 13px;
+//     font-weight: 700;
+//     background: red;
+//     color: #fff;
+//     padding: 3px 10px;
+// }
+
+// .product-tumb {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 300px;
+//     padding: 50px;
+//     background: #f0f0f0;
+// }
+
+// .product-tumb img {
+//     max-width: 100%;
+//     max-height: 100%;
+// }
+
+// .product-details {
+//     padding: 30px;
+// }
+
+// .product-catagory {
+//     display: block;
+//     font-size: 12px;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color: #ccc;
+//     margin-bottom: 18px;
+// }
+
+// .product-details h4 a {
+//     font-weight: 500;
+//     display: block;
+//     margin-bottom: 18px;
+//     text-transform: uppercase;
+//     color: #363636;
+//     text-decoration: none;
+//     transition: 0.3s;
+// }
+
+// .product-details h4 a:hover {
+//     color: #fbb72c;
+// }
+
+// .product-details p {
+//     font-size: 15px;
+//     line-height: 22px;
+//     margin-bottom: 18px;
+//     color: #999;
+// }
+
+// .product-bottom-details {
+//     overflow: hidden;
+//     border-top: 1px solid #eee;
+//     padding-top: 20px;
+// }
+
+// .product-bottom-details div {
+//     float: left;
+//     width: 50%;
+// }
+
+// .product-price {
+//     font-size: 18px;
+//     color: #fbb72c;
+//     font-weight: 600;
+// }
+
+// .product-price small {
+//     font-size: 80%;
+//     font-weight: 400;
+//     text-decoration: line-through;
+//     display: inline-block;
+//     margin-right: 5px;
+// }
+
+// .product-links {
+//     text-align: right;
+// }
+
+// .product-links a {
+//     display: inline-block;
+//     margin-left: 5px;
+//     color: #e1e1e1;
+//     transition: 0.3s;
+//     font-size: 17px;
+// }
+
+// .product-links a:hover {
+//     color: #fbb72c;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.card {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    height: 380px;
+    overflow: hidden;
+    width: 400px;
+}
+.options{
+    justify-content: center;
+    display: flex;
+    margin: 0%;
+}
+.card > figure {
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.card > figure > img {
+    width: 100%;
+}
+
+.details {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 78%;
+    width: 100%;
+    transition: box-shadow .3s ease-in-out,
+                top .3s ease-in-out;
+}
+
+.card:hover .details {
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+    top: 40%;
+}
+
+.details > .min-details
+{
+    margin-bottom: 20px;
+}
+
+.details > .min-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details > .min-details > h1 > span {
+    color: #7B7B7B;
+    display: block;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.details > .options h1 {
+    margin-bottom: 5px;
+}
+
+.details > .options ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.details > .options ul button {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    line-height: 35px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.options-size > ul > button {
+    background-color: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 1.7rem;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out;
+}
+
+.options-size > ul > button:hover {
+    background-color: #2876fd;
+}
+
+
+.countBtn{
+    text-align: center;
+    background-color: #2876fd;
+    color: #FFF;
+
+
+}
+.btn {
+    background-color: #2876fd;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    margin: 1.5em 0em 1em 0em;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+    transition: box-shadow .3s ease-in-out,
+                transform .3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  transform: translateY(-2px);
+}
+.product-card{
+    margin: 1.5%;
+}
+.row{
+    justify-content: center;
+}
+.product-icon{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.countInput{
+    border: none;
+    border-bottom: 1px solid rgb(35, 35, 217);
+    text-align: center;
+    width: 5em;
+    margin: 0em 2em;
+}

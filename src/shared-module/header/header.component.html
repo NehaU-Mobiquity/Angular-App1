@@ -1,81 +1,70 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Container wrapper -->
+	<div class="container">
+	  <!-- Navbar brand -->
+	  <a class="navbar-brand me-2">
+		<img
+		  src="../../assets/logof.png"
+		  height="100"
+		  alt="NetMartLogo"
+		  loading="lazy"
+		  style="margin-top: -1px;"
+		/>
+	  </a>
+  
+	  <!-- Toggle button -->
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-mdb-toggle="collapse"
+		data-mdb-target="#navbarButtonsExample"
+		aria-controls="navbarButtonsExample"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<i class="fas fa-bars"></i>
+	  </button>
+  
+	  <!-- Collapsible wrapper -->
+	  <div class="collapse navbar-collapse" id="navbarButtonsExample">
+		<!-- Left links -->
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item">
+			<a class="brand-name text-primary">NetMart</a>
+		  </li>
+		</ul>
+		<!-- Left links -->
+		<form class="d-flex input-group w-auto">
+			<input
+			  type="search"
+			  class="form-control rounded"
+			  placeholder="Search"
+			  aria-label="Search"
+			  aria-describedby="search-addon"
+			/>
+			<span class="input-group-text border-0" id="search-addon">
+			  <img class="image" src="../../assets/saveimg.png">
+			</span>
+		  </form>
+  
+		<div class="d-flex align-items-center">
+			<a>
+				<img class="nav-img" src="../../assets/profile.png">
+			  </a>
+			  <p class="text-4 align-center">Welcome, {{username}}</p>
+		  <a>
+			<img class="nav-img" src="../../assets/shopping-cart.png">
+		  </a>
 
-	
-	<!-- Header -->
-	
-	<header class="header">
+		  <button type="button" class="btn btn-primary me-3">
+			Logout
+		  </button>
 
-			<div class="header-container">
-				<div class="row">
-					<div class="col-lg-2">
-						<img src="../../assets/logof.png">
-					</div>
-					<!-- Logo -->
-					<div class="col-lg-2">
-						<div class="logo_container">
-							<div class="logo"><a style="font-family: monochrome;font-style: italic">NetMart</a></div>
-						</div>
-					</div>
-
-					<!-- Search -->
-					<div class="col-lg-4 text-lg-left text-right">
-						<div class="header_search">
-							<div class="header_search_content">
-								<div class="header_search_form_container">
-									<form action="#" class="header_search_form clearfix">
-										<input type="search" required="required" class="header_search_input" placeholder="Search for products...">
-										<!-- <div class="custom_dropdown" style="display: none;">
-											<div class="custom_dropdown_list">
-												<span class="custom_dropdown_placeholder clc">All Categories</span>
-												<i class="fas fa-chevron-down"></i>
-												<ul class="custom_list clc">
-													<li><a class="clc" href="#">All Categories</a></li>
-													<li><a class="clc" href="#">Computers</a></li>
-													<li><a class="clc" href="#">Laptops</a></li>
-													<li><a class="clc" href="#">Cameras</a></li>
-													<li><a class="clc" href="#">Hardware</a></li>
-													<li><a class="clc" href="#">Smartphones</a></li>
-												</ul>
-											</div>
-										</div> -->
-										<button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Wishlist -->
-					<div class="col-lg-4 text-lg-left text-right">
-						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
-							<div class="wishlist d-flex flex-row align-items-center justify-content-end">
-								<div class="wishlist_icon"><img class="header-img" src='../../assets/profile.png' alt="">
-								</div>
-								<div class="wishlist_content">
-									<div class="wishlist_text"><a >Welcome, {{username}}</a></div>
-								</div>
-							</div>
-
-							<!-- Cart -->
-							<div class="logout-container">
-								<button class="btn btn-primary" (click)="logout()">Logout</button>
-							</div>
-							<div class="cart">
-								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
-									<div class="cart_icon">
-										<img class="header-img" src='../../assets/shopping-cart.png' alt="">
-										<div class="cart_count" style="margin-bottom: 1.4em;"><span>{{cartCount}}</span></div>
-									</div>
-									<div class="cart_content">
-										<div class="cart_text"><a href="#">Cart</a></div>
-										<div class="cart_price">$185</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-	</header>
+		</div>
+	  </div>
+	  <!-- Collapsible wrapper -->
+	</div>
+	<!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
