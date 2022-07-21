@@ -1,0 +1,33 @@
+<div class="listing-section row" style="height: auto;">
+    <ng-container *ngFor="let item of productsList">
+      <div class="product col-lg-4">
+        <div class="image-box">
+          <div class="images" id="image-1">
+          <img src="{{item.thumbnail}}"></div>
+        </div>
+        <div class="text-box">
+          <h2 class="item">{{item.title}}</h2>
+          <h3 class="price">{{item.price}}</h3>
+          <p class="description">{{item.description}}</p>
+          <label for="item-1-quantity">Quantity:</label>
+          <span>
+              <button class="btn btn-primary" (click)="addItem(item)">+</button>
+              <input
+                type="text"
+                #quantity
+                name="item-1-quantity"
+                id="item-1-quantity"
+                value="{{item.count}}"
+                
+              />
+              <button class="btn btn-primary" (click)="removeItem(item)">-</button>
+  
+          </span>
+          <button type="button" name="item-1-button" id="item-1-button" (click)="addToCart(item)">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  

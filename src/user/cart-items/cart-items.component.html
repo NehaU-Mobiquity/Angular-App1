@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+      Shopping Bag
+    </div>
+    <ng-container *ngFor="let item of cartItems">
+    <!-- Product #1 -->
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+
+      <div class="image">
+        <img src="{{item.thumbnail}}" />
+      </div>
+
+      <div class="description">
+        <span>{{item.description}}</span>
+      </div>
+
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="https://designmodo.com/demo/shopping-cart/plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="{{item.count}}">
+        <button class="minus-btn" type="button" name="button">
+          <img src="https://designmodo.com/demo/shopping-cart/minus.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="total-price">{{item.price}}</div>
+    </div>
+</ng-container>
+  </div>
+</body>
+</html>
